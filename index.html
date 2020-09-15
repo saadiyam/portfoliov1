@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Signika:400" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+  <script>
+    $(document).ready(function () {
+
+
+      $('#aboutPage').load("aboutPage.html");
+
+      $("#aboutPage").fadeIn().css("display", "inline-block");
+      $("#aboutBtn").focus();
+
+      $('#aboutBtn').on('click', function () {
+
+        $('#aboutPage').load("aboutPage.html").slideDown().css("display", "inline-block");
+        $("#workPage").fadeOut().css("display", "none");
+        $("#resumePage").fadeOut().css("display", "none");
+        $("#contactPage").fadeOut().css("display", "none");
+
+      })
+
+      $('#resumeBtn').on('click', function () {
+
+        $('#resumePage').load("resumePage.html").slideDown().css("display", "inline-block");
+        $("#workPage").fadeOut().css("display", "none");
+        $("#aboutPage").fadeOut().css("display", "none");
+        $("#contactPage").fadeOut().css("display", "none");
+
+
+      })
+
+
+      $('#workBtn').on('click', function () {
+
+        $('#workPage').load("portfolioPage.html").slideDown().css("display", "inline-block");
+        $("#resumePage").fadeOut().css("display", "none");
+        $("#aboutPage").fadeOut().css("display", "none");
+        $("#contactPage").fadeOut().css("display", "none");
+
+      })
+
+    });
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saadiya A</title>
+</head>
+
+<body>
+  <div class="area">
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="card" id="#card">
+    <div class="rext">
+      <div id="aboutPage">
+
+      </div>
+      <div id="resumePage">
+
+      </div>
+      <div id="workPage">
+
+      </div>
+
+      <div class="nav">
+        <button id="aboutBtn" class="btn">
+          <i class="fa fa-2x fa-user"></i><span>About</span>
+        </button>
+        <button id="resumeBtn" class="btn">
+          <i class="fa fa-2x fa-code"></i><span>Skills</span>
+          <button id="workBtn" class="btn">
+            <i class="fa fa-2x fa-briefcase"></i><span>Work</span>
+          </button>
+      </div>
+    </div>
+    <div class="content">
+
+      <img src="images/hijab.png" class="card-image" />
+
+      <div class="card-info">
+        <p>
+          Saadiya A
+        </p>
+        <p>
+          Web Developer
+        </p>
+        <br />
+        <a href="/images/SaadiyaAmbereen_Resume.pdf" class="myButton" download>
+          Download CV
+        </a>
+
+        <br />
+        <a href="https://github.com/saadiyam" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+        <a href="https://ae.linkedin.com/in/saadiya-ambereen" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--- Mobile Site -->
+  <div class="mobile">
+    <section class="col1">
+      <img src="images/hijab.png" class="logo" alt="" srcset="">
+      <p>
+      <h2>Saadiya A</h2>
+      <h4>Web Developer</h4>
+
+      <a href="/images" class="myButton" download>
+        Download CV
+      </a>
+
+      <br />
+      <a href="https://github.com/saadiyam" target="_blank"><i class="fa fa-2x fa-github"></i></a>
+      <a href="https://ae.linkedin.com/in/saadiya-ambereen" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a>
+      </p>
+    </section>
+
+    <section class="col2">
+      <p>
+      <h2>About</h2>
+      I am an aspiring web developer with knowledge in many different front
+      end and back end languages and databases. My objective is to be the best
+      developer I can be and to contribute to the technology industry all that
+      I know and can do. I am dedicated to performing and learning and
+      continously making strides to achieve my potential. <br /><br />
+      <span> Residence: </span> UAE<br />
+      <span> Address: </span> Sharjah <br />
+      <span> Email: </span> ambereensaadiya@gmail.com <br /><br />
+      <h3>Education</h3>
+      <p>
+        <span>Bachelor's of Science in Information Systems and Management</span>
+        Manipal Academy of Higher Education, Dubai, UAE
+      </p>
+
+      <p>
+        <span>CBSE 12th Grade, Commerce Stream</span>
+        Our Own English High School, Sharjah, UAE
+    </section>
+
+    <section class="col3">
+      <h2>Work Experience </h2>
+      <p>
+        <span> Junior Web Developer Intern,</span> Wisdom IT Solutions LLC, Dubai, UAE <br />
+        August 2018 - October 2018 <br />
+        • Performed testing of websites and mobile applications. <br />
+        • Assisted in development of websites and made modifications to existing websites. <br /><br />
+
+      </p>
+
+      <p>
+        <span> Member of Project Cell,</span> MAHE, Dubai, UAE <br />
+        January 2017 - September 2018 <br />
+        • Performed testing of university websites. <br />
+        • Assisted in updating of databases of relevant websites.
+        <br /><br />
+
+      </p>
+      <h2>Skills </h2>
+      <p>
+        <span> Front End Languages: </span> CSS, HTML, Javascript <br />
+        <span> Frameworks: </span> jQuery, Bootstrap, .NET <br />
+        <span> Back End Languages: </span> Java, PHP, C++, C#<br />
+        <span> Databases: </span> MySQL, SQLite, Mongo, Firebase <br />
+        <span> Tools: </span> Android Studio, Visual Studio, Visual Studio Code,
+        NetBeans IDE <br />
+        <span> Server Side: </span> Node <br />
+        <span> Others: </span> Adobe Photoshop, Adobe Illustrator, Adobe
+        InDesign, Adobe XD, MS Office, MS Project, MS Visio <br /><br />
+      </p>
+
+      <h2>Certifications</h2>
+      <p>
+        <span> University of Helsinki Elements of AI</span> 2019 <br />
+        <span>
+          Dell EMC Academic Associate Information Storage and Management</span>
+        2019 <br />
+        <span> International Computer Driving License (ICDL)</span> 2018 <br />
+        <span> Cisco Networking Academy CCNA</span> 2018 <br />
+        <span> Oracle Academy Database Design and Programming with SQL</span>
+        2017 <br />
+        <span> Cisco Networking Academy IT Essentials</span> 2016 <br />
+        <span> Cisco Networking Academy Packet Tracer</span> 2016 <br />
+      </p>
+
+    </section>
+
+    <section class="col4">
+      <h2>Work</h2><br>
+      <main class="grid">
+        <article>
+          <img src="images/timely.gif" alt="Timely gif" />
+          <div class="text">
+            <h4>Timely Mobile App</h4>
+            <p>
+              Java | SQLite | HTML/CSS
+            </p>
+            <a href="https://github.com/saadiyam/Timely-SQL" target="_blank">Github</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/game.gif" alt="Game gif" />
+          <div class="text">
+            <h4>Multiplayer Game</h4>
+            <p>
+              JavaScript | HTML/CSS | Socket.io
+            </p>
+            <a href="https://github.com/saadiyam/multiplayer-game" target="_blank">Github</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/blog.gif" alt="Blog gif" />
+          <div class="text">
+            <h4>Blog Website</h4>
+            <p>
+              Node | EJS | MongoDB
+            </p>
+            <a href="https://github.com/saadiyam/BlogWebsite" target="_blank">Github</a>
+          </div>
+        </article>
+
+        <article>
+          <img src="images/chatapp.gif" alt="Chatapp gif" />
+          <div class="text">
+            <h4>Chat App</h4>
+            <p>
+              React | Firebase | Material UI
+            </p>
+            <a href="https://github.com/saadiyam/ChatApp" target="_blank">Github</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/portfolio.gif" alt="Portfolio gif" />
+          <div class="text">
+            <h4>Portfolio Website</h4>
+            <p>
+              jQuery | HTML/CSS
+            </p>
+            <a href="https://github.com/saadiyam/SadiyaPortfolio" target="_blank">Github</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/quiz.gif" alt="Quiz gif" />
+          <div class="text">
+            <h4>Quick Quiz</h4>
+            <p>
+              JavaScript | HTML/CSS
+            </p>
+            <a href="https://jsquickquiz.imfast.io/" target="_blank">Try It</a>
+            <a href="https://github.com/saadiyam/quickquiz" target="_blank">Github</a>
+          </div>
+        </article>
+        <article>
+          <img src="images/todolist.gif" alt="todolist gif" />
+          <div class="text">
+            <h4>To Do List</h4>
+            <p>
+              jQuery | HTML/CSS
+            </p>
+            <a href="https://jquerytodolist.imfast.io/todolist.html" target="_blank">Try It</a>
+            <a href="https://github.com/saadiyam/jQueryToDoList" target="_blank">Github</a>
+          </div>
+        </article>
+      </main>
+    </section>
+  </div>
+</body>
+
+</html>

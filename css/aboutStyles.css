@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-left: 0.7rem;
+}
+
+span {
+  color: #0b727f;
+}
+.row {
+  max-width: 100%;
+}
+
+.education {
+  padding: 0.4rem;
+}
+
+p {
+  margin: 0;
+}
+
+.about {
+  float: left;
+  max-width: 55%;
+  padding: 0.5rem;
+}
+
+.details {
+  max-width: 45%;
+  line-height: 2rem;
+  float: right;
+  padding: 0.5rem;
+}
